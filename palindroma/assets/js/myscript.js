@@ -6,7 +6,7 @@ var x = prompt("Inserisci la parola : ");
 console.log(x);
 var verifica = palindroma();
 
-
+// prima separiamo la parola , cambiamo le posizioni delle lettere e li mettiamo insieme
 function palindroma() {
      var y = x.split("").reverse().join("") ;
      console.log(y);

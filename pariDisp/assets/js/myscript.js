@@ -10,7 +10,7 @@ console.log("Il numero inserito dal player è "+y);
 
 var total = somma();
 console.log("la somma dei numeri è "+total);
-var winner = pariDisp();
+pariDisp();
 
 
 function somma() {

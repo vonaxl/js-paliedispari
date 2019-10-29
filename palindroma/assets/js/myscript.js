@@ -17,8 +17,8 @@ console.log(y);
 document.getElementById('yOut').innerHTML = y;
 
 
-var verifica = palindroma();
-function palindroma() {
+var verifica = palindroma(x,y);
+function palindroma(x,y) {
 
     if (x==y) {
         console.log("E' palindroma");
@@ -28,6 +28,14 @@ function palindroma() {
        return false
     }
 }
+
+if (verifica) {
+    document.getElementById('zOut').innerHTML = "La parola è palindroma";
+} else {
+    document.getElementById('zOut').innerHTML = "La parola non è palindroma";
+}
+
+
 
 
 // prima separiamo la parola , cambiamo le posizioni delle lettere e li mettiamo insieme
@@ -43,9 +51,3 @@ function palindroma() {
 //         return false
 //      }
 // }
-
-if (verifica==true) {
-    document.getElementById('zOut').innerHTML = "La parola è palindroma";
-} else {
-    document.getElementById('zOut').innerHTML = "La parola non è palindroma";
-}
